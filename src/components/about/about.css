@@ -1,0 +1,191 @@
+.about-container {
+  grid-template-columns: 3fr 9fr;
+  column-gap: 1.875rem;
+}
+
+.about-data {
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about-data::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+}
+
+.about-description {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+@keyframes wave_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave {
+  animation: wave_animation 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+.about-skills {
+  row-gap: 1.25rem;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skills-name {
+  font-size: var(--normal-font-size);
+  /* font-weight: var(--font-medium); */
+}
+
+.skills-number {
+  line-height: 1.2;
+}
+
+.skills-bar,
+.skills-percentage {
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.skills-bar {
+  background-color: #f1f1f1;
+}
+
+.skills-percentage {
+  display: block;
+}
+
+.frontend {
+  width: 60%;
+  background-color: rgb(255, 209, 92);
+}
+
+.backend {
+  width: 40%;
+  background-color: rgb(255, 76, 96);
+}
+
+.other-tools {
+  width: 45%;
+  background-color: rgb(108, 108, 299);
+}
+
+.about-boxes {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3.25rem;
+}
+
+.about-box {
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+
+.about-icon {
+  font-size: var(--h1-font-size);
+  color: #dedeea;
+}
+
+.about-title {
+  font-size: 1.875rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 720px;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+
+  .about-data::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    left: 49%;
+    top: -19px;
+  }
+
+  .about-img {
+    justify-self: center;
+  }
+
+  .about-box {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 350px;
+  }
+
+  .about-data::before {
+    left: 47%;
+  }
+
+  .about-data {
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+  }
+
+  .about-boxes {
+    grid-template-columns: repeat(2, 150px);
+    row-gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-container {
+    grid-template-columns: 320px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}

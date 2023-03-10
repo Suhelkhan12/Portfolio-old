@@ -1,0 +1,87 @@
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--body-color);
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  width: 110px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.nav-link {
+  font-size: 1.15rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+  transition: 0.3s;
+}
+
+.nav-item:hover i {
+  color: hsl(43, 100%, 68%);
+  font-weight: 600;
+}
+
+.copyright {
+  color: hsl(245, 15%, 65%);
+  font-size: var(--small-font-size);
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  font-weight: var(--font-semibold);
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.875rem;
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+  background-color: var(--title-color);
+  border: 1px solid #e8dfec;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: #ffffff;
+  transition: 0.3s all;
+}
+
+@keyframes rotateMenu {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav-toggle:hover .menu-toggle {
+  animation: rotateMenu 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    left: -110px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle-open {
+    left: 110px;
+  }
+
+  .show-menu {
+    transition: 0.3s;
+    left: 0;
+  }
+}

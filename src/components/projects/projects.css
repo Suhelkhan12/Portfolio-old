@@ -1,0 +1,126 @@
+.work-filters {
+  display: flex;
+  align-items: center;
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.work-item {
+  cursor: pointer;
+  font-weight: var(--font-bold);
+  transition: 0.3s;
+}
+
+.work-item:hover {
+  color: var(--first-color);
+}
+
+.work-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+
+.work-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.work-mask {
+  background: #6c6ce5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.work-category {
+  color: #fff;
+  background-color: var(--first-color);
+  border-bottom-left-radius: 0.98rem;
+  border-bottom-right-radius: 0.98rem;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  font-size: var(--small-font-size);
+  display: inline-block;
+  padding: 0.19rem 0.625rem;
+  transform: translateY(-40px);
+  transition: 0.3s;
+}
+
+.work-title {
+  color: #ffffff;
+  font-size: var(--h3-font-size);
+  margin: 0 0 0 0.98rem;
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 3.75rem;
+  transform: translateY(30px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.work-button {
+  color: #ffffff;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: var(--h3-font-size);
+  display: block;
+  background-color: #ffd15c;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.work-card:hover .work-button {
+  opacity: 1;
+}
+
+.work-card:hover .work-title,
+.work-card:hover .work-category {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-card:hover .work-mask {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-filters {
+    justify-content: center;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-filters {
+    justify-content: center;
+  }
+  .work-container {
+    grid-template-columns: 330px;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .work-container {
+    grid-template-columns: 295px;
+  }
+}
