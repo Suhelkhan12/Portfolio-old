@@ -1,9 +1,9 @@
 import Work1 from "../../assets/work-1.png";
 import Work2 from "../../assets/work-2.png";
-import Work3 from "../../assets/work-2.png";
-import Work4 from "../../assets/work-1.png";
-import Work5 from "../../assets/work-2.png";
-import Work6 from "../../assets/work-2.png";
+import Work3 from "../../assets/work-3.png";
+import Work4 from "../../assets/work-3.png";
+import Work5 from "../../assets/work-5.png";
+import Work6 from "../../assets/work-6.png";
 
 const Menu = [
   {
