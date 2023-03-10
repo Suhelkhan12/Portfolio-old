@@ -23,9 +23,9 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "Admin Dashboard",
+    title: "Admin Dashboard(making)",
     category: "Backend",
-    link: "https://dulcet-paletas-64953e.netlify.app",
+    link: "#",
   },
 
   {
@@ -33,23 +33,23 @@ const Menu = [
     image: Work4,
     title: "",
     category: "Backend",
-    link: "https://dulcet-paletas-64953e.netlify.app",
+    link: "#",
   },
 
   {
     id: 5,
     image: Work5,
-    title: "Chat app",
+    title: "Chat app(upcoming)",
     category: "Full",
-    link: "https://dulcet-paletas-64953e.netlify.app",
+    link: "#",
   },
 
   {
     id: 6,
     image: Work6,
-    title: "Ecommerce",
+    title: "Ecommerce(upcoming)",
     category: "Full",
-    link: "https://dulcet-paletas-64953e.netlify.app",
+    link: "#",
   },
 ];
 
