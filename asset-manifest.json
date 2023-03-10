@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/suhel.xyz/static/css/main.055e09e9.css",
-    "main.js": "/suhel.xyz/static/js/main.c3db1da9.js",
+    "main.js": "/suhel.xyz/static/js/main.1ce55873.js",
     "static/media/work-1.png": "/suhel.xyz/static/media/work-1.a6b7a815d2dd837bdcb7.png",
+    "static/media/work-6.png": "/suhel.xyz/static/media/work-6.287730a73ccec1b530e0.png",
     "static/media/S.gif": "/suhel.xyz/static/media/S.717f1a46104d9c9f6547.gif",
+    "static/media/work-3.png": "/suhel.xyz/static/media/work-3.3221bf6c59c6d151cc37.png",
     "static/media/resume.pdf": "/suhel.xyz/static/media/resume.f82723f8f7d13208d467.pdf",
     "static/media/work-2.png": "/suhel.xyz/static/media/work-2.1883fdd3977bedad0626.png",
+    "static/media/work-5.png": "/suhel.xyz/static/media/work-5.dd44d01ecc295a303a66.png",
     "static/media/avatar-2.svg": "/suhel.xyz/static/media/avatar-2.dbaf15ff9b5d68a39d1b24521fb12640.svg",
     "static/media/avatar-1.svg": "/suhel.xyz/static/media/avatar-1.e18c937d0a33154687422e5da407f480.svg",
     "static/media/dot-svg.svg": "/suhel.xyz/static/media/dot-svg.52ba50ae50598a814dca.svg",
     "index.html": "/suhel.xyz/index.html",
     "main.055e09e9.css.map": "/suhel.xyz/static/css/main.055e09e9.css.map",
-    "main.c3db1da9.js.map": "/suhel.xyz/static/js/main.c3db1da9.js.map"
+    "main.1ce55873.js.map": "/suhel.xyz/static/js/main.1ce55873.js.map"
   },
   "entrypoints": [
     "static/css/main.055e09e9.css",
-    "static/js/main.c3db1da9.js"
+    "static/js/main.1ce55873.js"
   ]
 }
