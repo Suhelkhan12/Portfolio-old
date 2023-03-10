@@ -23,7 +23,7 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "Delivery App Wireframe",
+    title: "Admin Dashboard",
     category: "Backend",
     link: "https://dulcet-paletas-64953e.netlify.app",
   },
@@ -31,7 +31,7 @@ const Menu = [
   {
     id: 4,
     image: Work4,
-    title: "Onboarding Motivation",
+    title: "",
     category: "Backend",
     link: "https://dulcet-paletas-64953e.netlify.app",
   },
@@ -39,7 +39,7 @@ const Menu = [
   {
     id: 5,
     image: Work5,
-    title: "iMac Mockup Design",
+    title: "Chat app",
     category: "Full",
     link: "https://dulcet-paletas-64953e.netlify.app",
   },
@@ -47,7 +47,7 @@ const Menu = [
   {
     id: 6,
     image: Work6,
-    title: "Game Store App Concept",
+    title: "Ecommerce",
     category: "Full",
     link: "https://dulcet-paletas-64953e.netlify.app",
   },
