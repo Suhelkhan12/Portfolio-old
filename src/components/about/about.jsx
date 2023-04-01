@@ -16,9 +16,14 @@ const About = () => {
             <p className="about-description">
               Hi,<span class="wave">👋</span> I'm Suhel, a computer science
               student at Panjab University, Chandigarh. Currently I'm pursuing
-              Master's in Computer Application there. I'm a coder at day and a
-              Gamer at night. I have a good understanding of
-              C++/Java/JavaScript, Data structures and Algorithms.
+              Master's in Computer Application there. I am self though front-end
+              developer who is passionate about building awesome website’s and
+              application’s! I have currently learned and used HTML, CSS, SASS,
+              Javascript, React. On personal level, I am self-driven & hard
+              working, I am able to adapt very quick and overall I am very
+              curious. Also, I am really friendly who can fit in any team. My
+              current skills HTML, CSS, BOOTSTRAP, Javascript, React, CLI, GIT,
+              Node(Intermediate).
             </p>
             <a href={resume} className="btn" rel="noreferrer" target="_blank">
               Download CV

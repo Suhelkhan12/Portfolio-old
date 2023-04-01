@@ -419,3 +419,10 @@ Don't like forms? Send me an email. 👋
           fill-rule="evenodd"
         />
       </svg>
+
+
+      I am self though front-end developer who is passionate about building awesome website’s and application’s! I have currently learned and used HTML, CSS, SASS, Javascript, React. On personal level, I am self-driven & hard working, I am able to adapt very quick and overall I am very curious. Also, I am really friendly who can fit in any team.
+
+My current skills
+
+HTML, CSS, BOOTSTRAP, Javascript, React, CLI, GIT, Node(Intermediate)
