@@ -23,15 +23,15 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "Admin Dashboard(making)",
-    category: "Backend",
+    title: "ChatGpt Clone(making)",
+    category: "Frontend + Backend",
     link: "#",
   },
 
   {
     id: 4,
     image: Work4,
-    title: "",
+    title: "Admindashboard",
     category: "Backend",
     link: "#",
   },
