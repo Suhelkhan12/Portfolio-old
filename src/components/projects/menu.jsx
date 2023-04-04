@@ -23,7 +23,7 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "ChatGpt Clone(making)",
+    title: "SkynetGpt",
     category: "Backend",
     link: "#",
   },
