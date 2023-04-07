@@ -22,7 +22,7 @@ const Contact = () => {
               target="_black"
               rel="noopener noreferrer"
             >
-              <span>Click Me!</span>
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>
