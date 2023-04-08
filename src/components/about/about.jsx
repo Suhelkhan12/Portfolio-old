@@ -79,39 +79,39 @@ const About = () => {
                 <div className="teck-container-main">
                   <span className="teck-img-container">
                     <img src={Cpp} alt="C++" className="skill-img" />
-                    <span className="skill-img-description">70%</span>
+                    {/* <span className="skill-img-description">70%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Java} alt="Java" className="skill-img" />
-                    <span className="skill-img-description">60%</span>
+                    {/* <span className="skill-img-description">60%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Html} alt="Html" className="skill-img" />
-                    <span className="skill-img-description">80%</span>
+                    {/* <span className="skill-img-description">80%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Css} alt="Css" className="skill-img" />
-                    <span className="skill-img-description">70%</span>
+                    {/* <span className="skill-img-description">70%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Js} alt="Js" className="skill-img" />
-                    <span className="skill-img-description">60%</span>
+                    {/* <span className="skill-img-description">60%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Rct} alt="React" className="skill-img" />
-                    <span className="skill-img-description">40%</span>
+                    {/* <span className="skill-img-description">40%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Node} alt="" className="skill-img" />
-                    <span className="skill-img-description">40%</span>
+                    {/* <span className="skill-img-description">40%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Sql} alt="Sql" className="skill-img" />
-                    <span className="skill-img-description">60%</span>
+                    {/* <span className="skill-img-description">60%</span> */}
                   </span>
                   <span className="teck-img-container">
                     <img src={Git} alt="" className="skill-img" />
-                    <span className="skill-img-description">60%</span>
+                    {/* <span className="skill-img-description">60%</span> */}
                   </span>
                 </div>
               </div>

@@ -116,14 +116,15 @@
   display: grid;
   grid-template-columns: repeat(4, 60px);
   column-gap: 10px;
+  row-gap: 10px;
 }
 
-.skill-img-description {
+/* .skill-img-description {
   font-size: 0.675rem;
   font-weight: var(--font-semibold);
   display: flex;
   justify-content: center;
-}
+} */
 
 .skill-img {
   max-width: 50px;
