@@ -111,6 +111,24 @@
   background-color: rgb(108, 108, 299);
 }
 
+.teck-container-main {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  column-gap: 10px;
+}
+
+.skill-img-description {
+  font-size: 0.675rem;
+  font-weight: var(--font-semibold);
+  display: flex;
+  justify-content: center;
+}
+
+.skill-img {
+  max-width: 50px;
+  width: 100%;
+}
 .about-boxes {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 3.25rem;

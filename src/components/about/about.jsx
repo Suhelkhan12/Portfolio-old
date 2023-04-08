@@ -3,6 +3,15 @@ import "./about.css";
 import About_logo from "../../assets/avatar-2.svg";
 import resume from "../documents/resume.pdf";
 import AboutBox from "./aboutBox";
+import Cpp from "../../assets/c++.png";
+import Java from "../../assets/java.png";
+import Css from "../../assets/css.png";
+import Html from "../../assets/html.png";
+import Js from "../../assets/js.png";
+import Rct from "../../assets/react.png";
+import Git from "../../assets/git.png";
+import Sql from "../../assets/sql.png";
+import Node from "../../assets/node.png";
 
 const About = () => {
   return (
@@ -61,6 +70,50 @@ const About = () => {
 
               <div className="skills-bar">
                 <span className="skills-percentage other-tools"></span>
+              </div>
+            </div>
+
+            <div className="skills-data">
+              <div className="skills-teck-stack">
+                <h3 className="skills-name">Teck Stack</h3>
+                <div className="teck-container-main">
+                  <span className="teck-img-container">
+                    <img src={Cpp} alt="C++" className="skill-img" />
+                    <span className="skill-img-description">70%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Java} alt="Java" className="skill-img" />
+                    <span className="skill-img-description">60%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Html} alt="Html" className="skill-img" />
+                    <span className="skill-img-description">80%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Css} alt="Css" className="skill-img" />
+                    <span className="skill-img-description">70%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Js} alt="Js" className="skill-img" />
+                    <span className="skill-img-description">60%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Rct} alt="React" className="skill-img" />
+                    <span className="skill-img-description">40%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Node} alt="" className="skill-img" />
+                    <span className="skill-img-description">40%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Sql} alt="Sql" className="skill-img" />
+                    <span className="skill-img-description">60%</span>
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Git} alt="" className="skill-img" />
+                    <span className="skill-img-description">60%</span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
