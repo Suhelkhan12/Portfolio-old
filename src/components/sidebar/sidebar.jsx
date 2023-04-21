@@ -11,7 +11,9 @@ const Sidebar = () => {
         <a href="#home" className="nav-logo">
           <img src={Logo} alt="logo" className="logo-avatar" />
         </a>
-
+        <button className="dark-light ">
+          <i class="fa-sharp fa-solid fa-moon-stars moon"></i>
+        </button>
         <nav className="nav">
           <div className="nav-menu">
             <ul className="nav-list">

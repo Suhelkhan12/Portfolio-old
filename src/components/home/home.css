@@ -100,7 +100,7 @@
 
 @keyframes animate-shapes {
   from {
-    transform: rotate(0d);
+    transform: rotate(0);
   }
   to {
     transform: rotate(360deg);

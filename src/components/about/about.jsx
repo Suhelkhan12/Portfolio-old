@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import About_logo from "../../assets/avatar-2.svg";
-import resume from "../documents/resume.pdf";
+import resume from "../documents/SuhelResume.pdf";
 import AboutBox from "./aboutBox";
 import Cpp from "../../assets/c++.png";
 import Java from "../../assets/java.png";
