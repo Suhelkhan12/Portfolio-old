@@ -23,7 +23,7 @@ const Menu = [
   {
     id: 3,
     image: Work3,
-    title: "SkynetGpt",
+    title: "SkynetGpt(upcoming)",
     category: "Backend",
     link: "#",
   },
@@ -31,7 +31,7 @@ const Menu = [
   {
     id: 4,
     image: Work4,
-    title: "Admindashboard",
+    title: "Admindashboard(upcoming)",
     category: "Backend",
     link: "#",
   },
