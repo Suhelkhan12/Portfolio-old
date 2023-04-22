@@ -25,7 +25,7 @@ const Menu = [
     image: Work3,
     title: "SkynetGpt(upcoming)",
     category: "Backend",
-    link: "#",
+    link: "https://skynet-64kh72niy-suhelkhan12.vercel.app/",
   },
 
   {
