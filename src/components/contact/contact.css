@@ -13,7 +13,7 @@
 }
 
 .button {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
   margin: 1.15rem;
   cursor: pointer;
@@ -22,8 +22,6 @@
 .button a {
   color: #fff;
   letter-spacing: 1px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 2px 0px #000;
 }
 
 @media screen and (max-width: 1024px) {

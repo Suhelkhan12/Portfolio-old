@@ -33,7 +33,7 @@ const About = () => {
               not coding, you can find me exploring new hiking trails or trying
               out new food/coffee shops.
             </p>
-            <a href={resume} className="btn" rel="noreferrer" target="_blank">
+            <a href={resume} className="btn " rel="noreferrer" target="_blank">
               Download CV
             </a>
           </div>

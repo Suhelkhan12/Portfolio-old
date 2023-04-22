@@ -22,7 +22,7 @@ const Contact = () => {
               target="_black"
               rel="noopener noreferrer"
             >
-              <span>LinkedIn</span>
+              LinkedIn
             </a>
           </div>
         </div>

@@ -59,7 +59,7 @@
   margin: 0 0 0 0.98rem;
   padding: 0 1.25rem;
   position: absolute;
-  top: 3.75rem;
+  top: 2.75rem;
   transform: translateY(30px);
   transition: 0.3s;
   opacity: 0;
@@ -70,7 +70,7 @@
   margin: 0 0 0 0.98rem;
   padding: 0 1.45rem;
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   transform: translateY(35px);
   transition: 0.3s;
   opacity: 0;
