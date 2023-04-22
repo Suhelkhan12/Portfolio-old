@@ -11,6 +11,7 @@ const Menu = [
     image: Work1,
     title: "University website",
     category: "Frontend",
+    desc: "My first project made using html , css , js only.",
     link: "https://stellar-queijadas-18cdcb.netlify.app/",
   },
   {
@@ -18,13 +19,17 @@ const Menu = [
     image: Work2,
     title: "Car buy website",
     category: "Frontend",
+    desc: "Prototype of car buy website made using html , css , js , mixitup.js etc for mouse scroll.",
+
     link: "https://dulcet-paletas-64953e.netlify.app",
   },
   {
     id: 3,
     image: Work3,
-    title: "SkynetGpt(upcoming)",
+    title: "SkynetGpt",
     category: "Backend",
+    desc: "SkynetGpt is made using OpenAi Api for NLP. Frontend part is build in Reactjs and backend in Nodejs.",
+
     link: "https://skynet-64kh72niy-suhelkhan12.vercel.app/",
   },
 
@@ -33,6 +38,8 @@ const Menu = [
     image: Work4,
     title: "Admindashboard(upcoming)",
     category: "Backend",
+    desc: "Learnig tech for this.",
+
     link: "#",
   },
 
@@ -41,6 +48,8 @@ const Menu = [
     image: Work5,
     title: "Chat app(upcoming)",
     category: "Full",
+    desc: "Learnig tech for this.",
+
     link: "#",
   },
 
@@ -49,6 +58,8 @@ const Menu = [
     image: Work6,
     title: "Ecommerce(upcoming)",
     category: "Full",
+    desc: "Learnig tech for this.",
+
     link: "#",
   },
 ];

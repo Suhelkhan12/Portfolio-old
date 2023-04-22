@@ -64,12 +64,23 @@
   transition: 0.3s;
   opacity: 0;
 }
+.work-subtitle {
+  color: #ffffff;
+  font-size: var(--h4-font-size);
+  margin: 0 0 0 0.98rem;
+  padding: 0 1.45rem;
+  position: absolute;
+  top: 5rem;
+  transform: translateY(35px);
+  transition: 0.3s;
+  opacity: 0;
+}
 
 .work-button {
   color: #ffffff;
   position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  bottom: 0.75rem;
+  left: 0.65rem;
   font-size: var(--h3-font-size);
   display: block;
   background-color: #ffd15c;
@@ -83,12 +94,18 @@
   opacity: 0;
 }
 
+.project-demo {
+  font-size: 0.85rem;
+  color: #121212;
+  font-weight: 600;
+}
 .work-card:hover .work-button {
   opacity: 1;
 }
 
 .work-card:hover .work-title,
-.work-card:hover .work-category {
+.work-card:hover .work-category,
+.work-card:hover .work-subtitle {
   opacity: 1;
   transform: translateY(0);
 }

@@ -33,7 +33,7 @@ const Projects = () => {
       </div>
       <div className="work-container grid">
         {items.map((element) => {
-          const { id, image, title, category, link } = element;
+          const { id, image, title, category, desc, link } = element;
           return (
             <div className="work-card" key={id}>
               <div className="work-thumbnail">
@@ -43,13 +43,15 @@ const Projects = () => {
 
               <span className="work-category">{category}</span>
               <h3 className="work-title">{title}</h3>
+              <p className="work-subtitle">{desc}</p>
               <a
                 href={link}
                 className="work-button"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="icon-link work-button-icon"></i>
+                {/* <i className="icon-link work-button-icon"></i> */}
+                <p className="project-demo">Demo</p>
               </a>
             </div>
           );

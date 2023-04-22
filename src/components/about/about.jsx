@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import About_logo from "../../assets/avatar-2.svg";
+import About_logo from "../../assets/suhel-img.jpg";
 import resume from "../documents/SuhelResume.pdf";
 import AboutBox from "./aboutBox";
 import Cpp from "../../assets/c++.png";
@@ -12,6 +12,7 @@ import Rct from "../../assets/react.png";
 import Git from "../../assets/git.png";
 import Sql from "../../assets/sql.png";
 import Node from "../../assets/node.png";
+import Bootstrap from "../../assets/bootstrap.png";
 
 const About = () => {
   return (
@@ -23,16 +24,14 @@ const About = () => {
         <div className="about-data grid">
           <div className="about-info">
             <p className="about-description">
-              Hi,<span class="wave">👋</span> I'm Suhel, a computer science
-              student at Panjab University, Chandigarh. Currently I'm pursuing
-              Master's in Computer Application there. I am self though front-end
-              developer who is passionate about building awesome website’s and
-              application’s! I have currently learned and used HTML, CSS, SASS,
-              Javascript, React. On personal level, I am self-driven & hard
-              working, I am able to adapt very quick and overall I am very
-              curious. Also, I am really friendly who can fit in any team. My
-              current skills HTML, CSS, BOOTSTRAP, Javascript, React, CLI, GIT,
-              Node(Intermediate).
+              Hello,<span class="wave">👋</span> I'm Suhel, a web developer and
+              a student. I'm passionate about crafting beautiful and functional
+              web applications that provide great user experiences. I believe in
+              clean and organized code, attention to detail, and constant
+              learning to stay up-to-date with the latest web technologies.I am
+              able to adapt very quick and overall I am very curious. When I'm
+              not coding, you can find me exploring new hiking trails or trying
+              out new food/coffee shops.
             </p>
             <a href={resume} className="btn" rel="noreferrer" target="_blank">
               Download CV
@@ -111,6 +110,10 @@ const About = () => {
                   </span>
                   <span className="teck-img-container">
                     <img src={Git} alt="" className="skill-img" />
+                    {/* <span className="skill-img-description">60%</span> */}
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Bootstrap} alt="" className="skill-img" />
                     {/* <span className="skill-img-description">60%</span> */}
                   </span>
                 </div>
