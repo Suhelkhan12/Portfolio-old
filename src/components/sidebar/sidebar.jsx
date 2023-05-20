@@ -26,12 +26,12 @@ const Sidebar = () => {
                   <i className="icon-user-following"></i>
                 </a>
               </li>
-
+              {/* 
               <li className="nav-item">
                 <a href="#resume" className="nav-link">
                   <i className="icon-graduation"></i>
                 </a>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <a href="#projects" className="nav-link">

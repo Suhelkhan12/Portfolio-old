@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import Home from "./components/home/home";
 import Projects from "./components/projects/projects";
 import About from "./components/about/about";
-import Resume from "./components/resume/resume";
+// import Resume from "./components/resume/resume";
 import Contact from "./components/contact/contact";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <main className="main">
         <Home />
         <About />
-        <Resume />
+        {/* <Resume /> */}
         <Projects />
         <Contact />
       </main>

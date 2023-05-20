@@ -1,7 +1,8 @@
 /*
 ================ GOOGLE FONTS =============
 */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600:700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600:700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
 /*
 =============== varriable css ===========
@@ -18,7 +19,7 @@
 
   /* =========== Font and typography ========= */
   /* .5rem = px | 1rem = 16px... */
-  --body-font: "Rubik", sans-serif;
+  --body-font: "Work Sans", sans-serif;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -142,25 +143,14 @@ img {
 .btn {
   padding: 0.75rem 2rem;
   line-height: 1;
-  border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb(0 0 0 /0%);
-  border: 1px solid transparent;
   color: #ffffff;
   display: inline-block;
   background: var(--first-color);
   font-weight: var(--font-bold);
   z-index: 100;
+  transition: box-shadow ease-in-out 0.3s;
 }
 
-@keyframes button-push {
-  50% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 .btn:hover {
-  animation: button-push 0.3s linear 1;
+  box-shadow: -5px -5px 0px 0px rgba(53, 50, 82, 1);
 }

@@ -23,10 +23,13 @@
 .work-card {
   position: relative;
   overflow: hidden;
-  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  transition: trasnform ease-in-out 0.3s;
 }
 
+.work-card:hover {
+  transform: skewX(-2deg);
+}
 .work-mask {
   background: #6c6ce5;
   position: absolute;
@@ -53,6 +56,11 @@
   transition: 0.3s;
 }
 
+.work-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
 .work-title {
   color: #ffffff;
   font-size: var(--h3-font-size);

@@ -15,6 +15,8 @@ const Home = () => {
         <span className="home-education">A Developer.</span>
         <br />
         <span className="home-education">
+          I design and code beautifully simple things, and I love what I do.
+          <br />
           Let's build something great Together!
         </span>
 
