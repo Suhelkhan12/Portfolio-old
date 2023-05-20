@@ -8,6 +8,8 @@ import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 
 const App = () => {
+  // this will be used for page above scroll bar
+
   return (
     <>
       {/* this is done for sidebar */}

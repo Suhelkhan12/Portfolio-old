@@ -154,3 +154,15 @@ img {
 .btn:hover {
   box-shadow: -5px -5px 0px 0px rgba(53, 50, 82, 1);
 }
+
+/* for progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--first-color);
+  transform-origin: 0%;
+  z-index: 2000;
+}
