@@ -1,4 +1,6 @@
 import React from "react";
+import { ScaleLoader } from "react-spinners";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
 import Home from "./components/home/home";
@@ -8,25 +10,54 @@ import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 
 const App = () => {
-  // this will be used for page above scroll bar
+  // IMP
+  // IMP
+  // IMP this I'm doing in order to load something on the screen
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // setting the loading state varriable to true
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
+  //
+  // IMP for css overrde prps
+
+  //
+  //
   return (
     <>
-      {/* this is done for sidebar */}
-      <Sidebar />
-      {/* 
-      // 
-      */}
-      {/* this is done for main */}
-      <main className="main">
-        <Home />
-        <About />
-        {/* <Resume /> */}
-        <Projects />
-        <Contact />
-      </main>
+      {loading ? (
+        <div className="screen-loader">
+          <ScaleLoader color="#d63636" loading={loading} size={30} />
+        </div>
+      ) : (
+        <>
+          {" "}
+          {/* this is done for sidebar */}
+          <Sidebar />
+          {/* 
+  // 
+  */}
+          {/* this is done for main */}
+          <main className="main">
+            <Home />
+            <About />
+            {/* <Resume /> */}
+            <Projects />
+            <Contact />
+          </main>
+        </>
+      )}
     </>
   );
 };
 
 export default App;
+
+// <ScaleLoader color="#d63636" />
