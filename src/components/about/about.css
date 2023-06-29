@@ -76,6 +76,10 @@
   margin-bottom: 1rem;
 }
 
+.skill-img {
+  animation: wave_animation 3.5s infinite;
+  transform-origin: 70% 70%;
+}
 .skills-name {
   font-size: var(--normal-font-size);
   /* font-weight: var(--font-medium); */
@@ -101,17 +105,17 @@
 
 .frontend {
   width: 70%;
-  background-color: rgb(255, 209, 92);
+  background-color: var(--skill-frontend-color);
 }
 
 .backend {
   width: 45%;
-  background-color: rgb(255, 76, 96);
+  background-color: var(--skill-backend-color);
 }
 
 .other-tools {
   width: 50%;
-  background-color: rgb(108, 108, 299);
+  background-color: var(--skill-other-color);
 }
 
 .teck-container-main {

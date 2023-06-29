@@ -24,11 +24,12 @@
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: trasnform ease-in-out 0.3s;
+  transition: transform ease-in 0.3s;
+  border-radius: 10px;
 }
 
 .work-card:hover {
-  transform: skewX(-2deg);
+  transform: translateY(-3%);
 }
 .work-mask {
   background: #6c6ce5;
@@ -59,7 +60,7 @@
 .work-img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .work-title {
   color: #ffffff;
@@ -93,19 +94,27 @@
   display: block;
   background-color: #ffd15c;
   height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  width: 80px;
+  border-radius: 12px;
   cursor: pointer;
   text-align: center;
   line-height: 42px;
   transition: 0.3s;
   opacity: 0;
 }
-
 .project-demo {
   font-size: 0.85rem;
   color: #121212;
   font-weight: 600;
+}
+.work-button:hover {
+  border-radius: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.project-demo:hover {
+  color: #ffffff;
 }
 .work-card:hover .work-button {
   opacity: 1;

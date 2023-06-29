@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./about.css";
 import About_logo from "../../assets/suhel-img.jpg";
 import resume from "../documents/SuhelResume.pdf";
@@ -13,15 +14,52 @@ import Git from "../../assets/git.png";
 import Sql from "../../assets/sql.png";
 import Node from "../../assets/node.png";
 import Bootstrap from "../../assets/bootstrap.png";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const [isSectionInView, setIsSectionInView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("about"); // Replace 'sectionId' with the actual ID of your section
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setIsSectionInView(isVisible);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [frontendPercent, backendPercent, othersPersent] = [70, 40, 50];
   return (
     <section className="about container section" id="about">
       <h2 className="section-title">About Me</h2>
 
       <div className="about-container grid">
-        <img src={About_logo} alt="aboutImg" className="about-img" />
-        <div className="about-data grid">
+        {/* <img src={About_logo} alt="aboutImg" className="about-img" /> */}
+        <motion.img
+          initial={{ opacity: 0, x: -200 }}
+          animate={
+            isSectionInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -200 }
+          }
+          transition={{ duration: 1.5 }}
+          src={About_logo}
+          alt="aboutImg"
+          className="about-img"
+        ></motion.img>
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          animate={
+            isSectionInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 200 }
+          }
+          transition={{ duration: 1.5 }}
+          className="about-data grid"
+        >
           <div className="about-info">
             <p className="about-description">
               Hello,<span class="wave">👋</span> I'm Suhel, a web developer and
@@ -42,33 +80,84 @@ const About = () => {
             <div className="skills-data">
               <div className="skills-title">
                 <h3 className="skills-name">Frontend</h3>
-                <span className="skills-number">70%</span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={isSectionInView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ duration: 0.5, delay: 1.5 }}
+                  className="skills-number"
+                >
+                  {frontendPercent}%
+                </motion.span>
               </div>
 
               <div className="skills-bar">
-                <span className="skills-percentage frontend"></span>
+                <motion.span
+                  style={{ width: `${frontendPercent}%` }}
+                  initial={{ width: 0 }}
+                  animate={
+                    isSectionInView
+                      ? { width: `${frontendPercent}%` }
+                      : { width: 0 }
+                  }
+                  transition={{ duration: 1, delay: 1.5 }}
+                  className="skills-percentage frontend"
+                ></motion.span>
               </div>
             </div>
 
             <div className="skills-data">
               <div className="skills-title">
                 <h3 className="skills-name">Backend</h3>
-                <span className="skills-number">40%</span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={isSectionInView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ duration: 0.5, delay: 1.6 }}
+                  className="skills-number"
+                >
+                  {backendPercent}%
+                </motion.span>
               </div>
 
               <div className="skills-bar">
-                <span className="skills-percentage backend"></span>
+                <motion.span
+                  style={{ width: `${backendPercent}%` }}
+                  initial={{ width: 0 }}
+                  animate={
+                    isSectionInView
+                      ? { width: `${backendPercent}%` }
+                      : { width: 0 }
+                  }
+                  transition={{ duration: 1, delay: 1.6 }}
+                  className="skills-percentage backend"
+                ></motion.span>
               </div>
             </div>
 
             <div className="skills-data">
               <div className="skills-title">
                 <h3 className="skills-name">Other tools</h3>
-                <span className="skills-number">50%</span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={isSectionInView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ duration: 0.5, delay: 1.7 }}
+                  className="skills-number"
+                >
+                  {othersPersent}%
+                </motion.span>
               </div>
 
               <div className="skills-bar">
-                <span className="skills-percentage other-tools"></span>
+                <motion.span
+                  style={{ width: `${backendPercent}%` }}
+                  initial={{ width: 0 }}
+                  animate={
+                    isSectionInView
+                      ? { width: `${backendPercent}%` }
+                      : { width: 0 }
+                  }
+                  transition={{ duration: 1, delay: 1.7 }}
+                  className="skills-percentage other-tools"
+                ></motion.span>
               </div>
             </div>
 
@@ -120,7 +209,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <AboutBox />

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { easeInOut, motion } from "framer-motion";
 import "./projects.css";
 import Menu from "./menu";
 
 const Projects = () => {
+  const [visibleIndex, setVisibleIndex] = useState(0);
   const [items, setItems] = useState(Menu);
 
   const filterItem = (categoryItem) => {
@@ -12,6 +14,30 @@ const Projects = () => {
 
     setItems(updatedItems);
   };
+
+  const [isSectionInView, setIsSectionInView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("card"); // Replace 'sectionId' with the actual ID of your section
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setIsSectionInView(isVisible);
+
+        const cardHeight = section.firstChild.clientHeight;
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const visibleIndex = Math.floor(scrollTop / cardHeight);
+        setVisibleIndex(visibleIndex);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section className="work container section" id="projects">
@@ -30,12 +56,31 @@ const Projects = () => {
         <span className="work-item" onClick={() => filterItem("Full")}>
           Complete
         </span>
+        <span className="work-item" onClick={() => filterItem("Webflow")}>
+          Webflow
+        </span>
       </div>
-      <div className="work-container grid">
-        {items.map((element) => {
+      <div className="work-container grid" id="card">
+        {items.map((element, index) => {
           const { id, image, title, category, desc, link } = element;
           return (
-            <div className="work-card" key={id}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={
+                isSectionInView && visibleIndex >= index
+                  ? {
+                      opacity: 1,
+
+                      transition: {
+                        delay: index * 0.3,
+                        ease: easeInOut,
+                      },
+                    }
+                  : { opacity: 0 }
+              }
+              className="work-card"
+              key={id}
+            >
               <div className="work-thumbnail">
                 <img src={image} alt="error" className="work-img" />
                 <div className="work-mask"></div>
@@ -53,7 +98,7 @@ const Projects = () => {
                 {/* <i className="icon-link work-button-icon"></i> */}
                 <p className="project-demo">Demo</p>
               </a>
-            </div>
+            </motion.div>
           );
         })}
       </div>

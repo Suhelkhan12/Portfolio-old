@@ -16,8 +16,8 @@ const AboutBox = () => {
         <i className="about-icon icon-badge badge-question"></i>
 
         <div>
-          <h3 className="about-title">70+</h3>
-          <span className="aboyt-subtitle">Questions</span>
+          <h3 className="about-title">Leetcode</h3>
+          <span className="aboyt-subtitle">Regularly</span>
         </div>
       </div>
     </div>

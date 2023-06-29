@@ -26,6 +26,9 @@
   margin-bottom: 0.5rem;
 }
 
+.home-subheading {
+  width: 100%;
+}
 .home-socials {
   display: flex;
   column-gap: 1.75rem;
@@ -36,11 +39,12 @@
 .home-social-link {
   color: var(--title-color);
   font-size: 1.3rem;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .home-social-link:hover {
   color: hsl(43, 100%, 68%);
+  transform: translateY(-3px);
 }
 
 .scroll-down {

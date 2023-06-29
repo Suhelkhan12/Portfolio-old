@@ -4,7 +4,7 @@ import Work3 from "../../assets/work-3.jpg";
 import Work4 from "../../assets/work-4.png";
 import Work5 from "../../assets/work-5.png";
 import Work6 from "../../assets/work-6.png";
-
+import Work7 from "../../assets/work7.png";
 const Menu = [
   {
     id: 1,
@@ -61,6 +61,15 @@ const Menu = [
     desc: "Learnig tech for this.",
 
     link: "#",
+  },
+  {
+    id: 7,
+    image: Work7,
+    title: "CyberTruck",
+    category: "Webflow",
+    desc: "Decided to make this minimalistic Cybertruck clone by tesla",
+
+    link: "https://cybertruck-suhel.webflow.io/",
   },
 ];
 

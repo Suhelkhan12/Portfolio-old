@@ -34,7 +34,7 @@
 @media screen and (max-width: 768px) {
   .contact-container {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 250px);
     justify-content: center;
   }
 }
