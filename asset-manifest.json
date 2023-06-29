@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a68b7978.css",
-    "main.js": "/Portfolio/static/js/main.5b4e67dd.js",
+    "main.css": "/Portfolio/static/css/main.4e6b0e49.css",
+    "main.js": "/Portfolio/static/js/main.aceb9bbe.js",
     "static/media/work-3.jpg": "/Portfolio/static/media/work-3.007083228bfbdbff7e5c.jpg",
     "static/media/work-1.png": "/Portfolio/static/media/work-1.a6b7a815d2dd837bdcb7.png",
     "static/media/work-6.png": "/Portfolio/static/media/work-6.287730a73ccec1b530e0.png",
     "static/media/S.gif": "/Portfolio/static/media/S.717f1a46104d9c9f6547.gif",
+    "static/media/work7.png": "/Portfolio/static/media/work7.d3c673a9e5cae36628b4.png",
     "static/media/work-4.png": "/Portfolio/static/media/work-4.954488c154a2dce930b8.png",
     "static/media/SuhelResume.pdf": "/Portfolio/static/media/SuhelResume.fed798b1371cd60f3783.pdf",
     "static/media/work-2.png": "/Portfolio/static/media/work-2.47cdf1aa28ac9e139da9.png",
@@ -14,11 +15,11 @@
     "static/media/suhel-img.jpg": "/Portfolio/static/media/suhel-img.76a4898c8b952a22230e.jpg",
     "static/media/dot-svg.svg": "/Portfolio/static/media/dot-svg.52ba50ae50598a814dca.svg",
     "index.html": "/Portfolio/index.html",
-    "main.a68b7978.css.map": "/Portfolio/static/css/main.a68b7978.css.map",
-    "main.5b4e67dd.js.map": "/Portfolio/static/js/main.5b4e67dd.js.map"
+    "main.4e6b0e49.css.map": "/Portfolio/static/css/main.4e6b0e49.css.map",
+    "main.aceb9bbe.js.map": "/Portfolio/static/js/main.aceb9bbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.a68b7978.css",
-    "static/js/main.5b4e67dd.js"
+    "static/css/main.4e6b0e49.css",
+    "static/js/main.aceb9bbe.js"
   ]
 }
