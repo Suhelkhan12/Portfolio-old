@@ -14,6 +14,7 @@ import Git from "../../assets/git.png";
 import Sql from "../../assets/sql.png";
 import Node from "../../assets/node.png";
 import Bootstrap from "../../assets/bootstrap.png";
+import Webflow from "../../assets/webflow.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -202,7 +203,15 @@ const About = () => {
                     {/* <span className="skill-img-description">60%</span> */}
                   </span>
                   <span className="teck-img-container">
-                    <img src={Bootstrap} alt="" className="skill-img" />
+                    <img
+                      src={Bootstrap}
+                      alt="bootstrap"
+                      className="skill-img"
+                    />
+                    {/* <span className="skill-img-description">60%</span> */}
+                  </span>
+                  <span className="teck-img-container">
+                    <img src={Webflow} alt="webflow" className="skill-img" />
                     {/* <span className="skill-img-description">60%</span> */}
                   </span>
                 </div>
